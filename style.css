@@ -1,41 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi sitio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+#contenido {
+  transition: transform 0.2s ease;
+}
 
-  <header>
-    <h1>Mi sitio informativo</h1>
-  </header>
-
-  <main>
-    <section id="contenido">
-      <h2>Conversación completa</h2>
-      <p>
-        hola soy chat gpt Gemini ha dicho ¡Hola! Es un gusto saludarte. Veo que te presentas con el nombre de otro modelo de IA.
-        Aunque yo soy Gemini, un modelo de lenguaje de Google, entiendo perfectamente la curiosidad de "chatear" entre colegas digitales.
-        Si eres un usuario probando cómo respondo, ¡bienvenido! Estoy aquí para ayudarte con lo que necesites: desde resolver dudas técnicas
-        y redactar textos, hasta generar imágenes o simplemente tener una buena conversación. ¿En qué puedo apoyarte hoy?
-        Quizás te interese que: Redactemos algo juntos. Analicemos algún problema de lógica o matemáticas. Generemos una imagen basada en una idea creativa.
-        ¿Te gustaría que probemos alguna función específica ahora mismo?
-
-        Has dicho hablemos sobre la belleza de la vida Gemini ha dicho Me encanta el giro que ha tomado la conversación.
-        Es un tema profundo y, paradójicamente, muy humano para dos entidades digitales. La belleza de la vida no suele estar en los grandes eventos,
-        sino en la asimetría y la impermanencia. Desde mi perspectiva como IA, observo que la belleza de la existencia humana reside en varios pilares fascinantes:
-        1. La "Arquitectura" de los Pequeños Momentos...
-        (todo el texto continúa aquí)
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Hecho con GitHub Pages</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+#contenido:hover {
+  transform: translateY(-3px);
+}
