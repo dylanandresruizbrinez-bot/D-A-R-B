@@ -1,78 +1,57 @@
-/* style.css actualizado: Estética del Gradiente y la Finitud */
-
+/* style.css - Versión Entrópica */
 :root {
-  --fondo-entropico: linear-gradient(135deg, #1a1a1a 0%, #2c1a05 100%);
-  --texto-esencia: #e0e0e0;
-  --acento-naranja: #ff8c00; /* El color del "eco térmico" */
-  --sombra-sutil: rgba(0, 0, 0, 0.5);
+  --fondo: linear-gradient(135deg, #0f0f0f 0%, #2d1b02 100%);
+  --texto: #f0f0f0;
+  --oro-viejo: #d4af37;
+  --naranja-atardecer: #ff7b00;
 }
 
 body {
-  background: var(--fondo-entropico);
-  color: var(--texto-esencia);
-  font-family: 'Georgia', serif; /* Una fuente con más "historia" y peso simbólico */
-  line-height: 1.8;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: 'Times New Roman', serif; /* Estética de manuscrito antiguo */
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   align-items: center;
+  min-height: 100vh;
 }
 
 header {
-  padding: 3rem 1rem;
+  padding: 50px;
+  border-bottom: 1px solid var(--naranja-atardecer);
+  width: 80%;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 140, 0, 0.2);
-  width: 100%;
 }
 
 h1 {
-  font-weight: 300;
-  letter-spacing: 4px;
+  color: var(--naranja-atardecer);
+  letter-spacing: 5px;
   text-transform: uppercase;
-  color: var(--acento-naranja);
-  text-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
 }
 
 main {
-  max-width: 800px;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(5px); /* El "difuminado semántico" aplicado a la UI */
-  border-radius: 8px;
-  margin: 2rem 0;
-  box-shadow: 0 10px 30px var(--sombra-sutil);
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 15px;
+  margin: 40px;
+  box-shadow: 0 0 20px rgba(255, 123, 0, 0.2);
 }
 
 #contenido {
-  transition: all 0.5s ease;
-  font-size: 1.1rem;
+  line-height: 1.8;
+  transition: all 0.8s ease; /* Transición más lenta y elegante */
 }
 
-/* El efecto hover ahora simula una "evaporación" visual */
 #contenido:hover {
-  transform: translateY(-5px);
-  text-shadow: 0 0 8px rgba(224, 224, 224, 0.4);
-  color: #ffffff;
-}
-
-h2 {
-  border-left: 3px solid var(--acento-naranja);
-  padding-left: 15px;
-  margin-bottom: 1.5rem;
-  font-style: italic;
+  transform: scale(1.01);
+  color: var(--oro-viejo);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
 footer {
-  margin-top: auto;
-  padding: 2rem;
-  font-size: 0.8rem;
-  opacity: 0.6;
-  letter-spacing: 1px;
-}
-
-/* Estilo para las fórmulas de LaTeX si las renderizas */
-.math {
-  color: var(--acento-naranja);
-  font-family: serif;
+  opacity: 0.4;
+  font-size: 0.7rem;
+  margin-bottom: 20px;
 }
