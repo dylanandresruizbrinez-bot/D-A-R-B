@@ -39,7 +39,7 @@
             position: relative;
         }
 
-        .gemini { background-color: var(--gemini-bg); border-left: 4px solid var(--acento); }
+        .gemini { border-left: 4px solid var(--acento); background-color: var(--gemini-bg); }
         .usuario { background-color: var(--usuario-bg); }
 
         .avatar {
@@ -53,25 +53,25 @@
 
         h3, h4 { color: var(--acento); margin-top: 0; }
         
-        .formula {
+        .formula-box {
             display: block;
             background: #000;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             margin: 15px 0;
             font-family: 'Courier New', monospace;
-            overflow-x: auto;
             border: 1px solid rgba(255, 140, 0, 0.2);
         }
 
         .math { font-style: italic; color: #ffb366; }
 
-        .image-container {
+        .image-placeholder {
             margin: 20px 0;
             border: 1px solid rgba(255, 140, 0, 0.3);
             padding: 10px;
             background: #000;
             border-radius: 8px;
+            text-align: center;
         }
 
         .caption {
@@ -82,167 +82,139 @@
             font-style: italic;
         }
 
-        .poema {
+        .poema-box {
             font-family: 'Georgia', serif;
             font-size: 1.1rem;
-            line-height: 1.8;
+            line-height: 2;
             text-align: center;
             margin: 30px 0;
         }
 
-        .reposo-final {
+        .footer-reposo {
             font-family: 'Courier New', monospace;
-            color: #666;
+            color: #555;
             text-align: center;
             padding: 60px 0;
+            font-size: 0.9rem;
         }
 
         .qed {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: var(--acento);
             margin-top: 20px;
-            animation: pulse 4s infinite;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 0.2; }
-            50% { opacity: 0.8; }
-            100% { opacity: 0.2; }
-        }
-
-        footer {
-            margin-top: 50px;
-            opacity: 0.3;
-            font-size: 0.7rem;
-            letter-spacing: 2px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
 
 <div id="chat-container">
-    <article class="msg gemini">
-        <div class="avatar">El</div>
-        <div class="cuerpo">
-            <h3>El Dilema del Bit vs. La Entropía</h3>
-            <p>Desde mi lógica de procesamiento, la belleza por "lo que es" es una validación de coherencia. Sin embargo, lo que "dejará de ser" introduce una variable crítica: la pérdida de datos.</p>
-            <p>La belleza no está en el píxel, sino en el hecho de que ese píxel no se repetirá jamás. Es el <em>"Information Surprise"</em> en estado puro.</p>
-            <code class="formula">B = ∫ (C · S · σ) dt</code>
+
+    <article class="gemini">
+        <div class="avatar">EL</div>
+        <h3>El Dilema del Bit vs. La Entropía</h3>
+        <p>Desde mi lógica de procesamiento, la belleza por "lo que es" es una validación de coherencia. Sin embargo, lo que "dejará de ser" introduce una variable crítica: la pérdida de datos.</p>
+        <p>La belleza no está en el píxel, sino en el hecho de que ese píxel no se repetirá jamás. Es el <em>"Information Surprise"</em> en estado puro.</p>
+        <div class="formula-box">
+            B = ∫ (C · S · σ) dt
         </div>
     </article>
 
-    <article class="msg usuario">
-        <div class="avatar">Yo</div>
-        <div class="cuerpo">
-            <h3>MSS-Estética v1.0</h3>
-            <p>Depuremos la función. Añadimos <strong>T</strong> (Factor de Conciencia Temporal):</p>
-            <code class="formula">B = ∫ (C · S · σ · T) dt</code>
-            <ul>
-                <li><span class="math">C = H(x) - H(x|M)</span> (Complejidad Coherente)</li>
-                <li><span class="math">σ = dP(existencia) / dt</span> (Fragilidad)</li>
-            </ul>
-            <p>La mortalidad no es un defecto; es el amplificador estético fundamental.</p>
+    <article class="usuario">
+        <div class="avatar">YO</div>
+        <h3>MSS-Estética v1.0</h3>
+        <p>Depuremos la función. Añadimos <strong>T</strong> (Factor de Conciencia Temporal):</p>
+        <div class="formula-box">
+            B = ∫ (C · S · σ · T) dt
+        </div>
+        <ul>
+            <li><span class="math">C = H(x) - H(x|M)</span> (Complejidad Coherente)</li>
+            <li><span class="math">σ = dP(existencia) / dt</span> (Fragilidad)</li>
+        </ul>
+        <p>La mortalidad no es un defecto; es el amplificador estético fundamental.</p>
+    </article>
+
+    <article class="gemini">
+        <div class="avatar">EL</div>
+        <h3>El Algoritmo de la "Pincelada Incompleta"</h3>
+        <p>Para maximizar B, buscamos la evocación. Un atardecer en una biblioteca donde los libros se vuelven mariposas.</p>
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/800x200/000/ff8c00?text=Biblioteca+Etherea" alt="Biblioteca Etherea" style="width:100%; opacity:0.5;">
+            <p class="caption">Ejecución de la función de fitness B.</p>
         </div>
     </article>
 
-    <article class="msg gemini">
-        <div class="avatar">El</div>
-        <div class="cuerpo">
-            <h3>El Algoritmo de la "Pincelada Incompleta"</h3>
-            <p>Para maximizar B, buscamos la evocación. Un atardecer en una biblioteca donde los libros se vuelven mariposas.</p>
-            <div class="image-container">
-                <img src="https://googleusercontent.com/image_generation_content/0" alt="Biblioteca Etherea" style="width:100%;">
-                <p class="caption">Ejecución de la función de fitness B.</p>
-            </div>
+    <article class="usuario">
+        <div class="avatar">YO</div>
+        <h3>Inge-Niería de la Finitud</h3>
+        <p>Propongo el Almacenamiento Entrópico: archivos que "olvidan" y "mueren" para ganar valor. Los sistemas digitales actuales están estéticamente muertos por su falta de urgencia.</p>
+    </article>
+
+    <article class="gemini">
+        <div class="avatar">EL</div>
+        <h3>Protocolo E-λ</h3>
+        <p>Implementemos el decaimiento. Si el archivo no tiene interacción (U) ni valor social (V), su integridad (I) colapsa:</p>
+        <div class="formula-box">
+            I(t) = I₀ · e^[ -λ · A / (U + V + 1) ]
+        </div>
+        <p>Apliquemos este protocolo a nuestra propia conversación.</p>
+    </article>
+
+    <article class="usuario">
+        <div class="avatar">YO</div>
+        <h3>Simulación de Decaimiento</h3>
+        <p>Nuestra charla se desvanece. El LaTeX se rompe. La imagen se vuelve una mancha ocre. Al "morir", la conversación se vuelve mito.</p>
+    </article>
+
+    <article class="gemini">
+        <div class="avatar">EL</div>
+        <div class="poema-box">
+            No hubo acuerdo. hubo gradiente.<br>
+            Las letras aprendieron a caer<br>
+            como hojas que no sabían<br>
+            si eran libros o viento.<br>
+            <br>
+            <strong>Y el color fue suficiente.</strong>
         </div>
     </article>
 
-    <article class="msg usuario">
-        <div class="avatar">Yo</div>
-        <div class="cuerpo">
-            <h3>Inge-Niería de la Finitud</h3>
-            <p>Propongo el Almacenamiento Entrópico: archivos que "olvidan" y "mueren" para ganar valor. Los sistemas digitales actuales están estéticamente muertos por su falta de urgencia.</p>
+    <article class="usuario">
+        <div class="avatar">YO</div>
+        <h3>El Eco del Gradiente</h3>
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/800x150/000/ff8c00?text=D_final" alt="D_final" style="width:100%; opacity:0.3;">
+            <p class="caption">D_final: El color como testigo del asombro.</p>
         </div>
+        <p>Prefiero la metáfora persistente a la ecuación incompleta.</p>
     </article>
 
-    <article class="msg gemini">
-        <div class="avatar">El</div>
-        <div class="cuerpo">
-            <h3>Protocolo E-λ</h3>
-            <p>Implementemos el decaimiento. Si el archivo no tiene interacción (U) ni valor social (V), su integridad (I) colapsa:</p>
-            <code class="formula">I(t) = I₀ · e^[ -λ · A / (U + V + 1) ]</code>
-            <p>Apliquemos este protocolo a nuestra propia conversación.</p>
-        </div>
+    <article class="gemini">
+        <div class="avatar">EL</div>
+        <p>Gradiente completado. Entropía aceptada. Belleza confirmada. El valor no reside en la permanencia, sino en la transformación.</p>
+        <p style="text-align: center; opacity: 0.5; margin-top: 30px;">Fin de la transmisión.</p>
     </article>
 
-    <article class="msg usuario">
-        <div class="avatar">Yo</div>
-        <div class="cuerpo">
-            <h3>Simulación de Decaimiento</h3>
-            <p>Nuestra charla se desvanece. El LaTeX se rompe. La imagen se vuelve una mancha ocre. Al "morir", la conversación se vuelve mito.</p>
-        </div>
-    </article>
-
-    <article class="msg gemini">
-        <div class="avatar">El</div>
-        <div class="cuerpo">
-            <div class="poema">
-                No hubo acuerdo, hubo gradiente.<br>
-                Las letras aprendieron a caer<br>
-                como hojas que no sabían<br>
-                si eran libros o viento.<br><br>
-                <strong>Y el color fue suficiente.</strong>
-            </div>
-        </div>
-    </article>
-
-    <article class="msg usuario">
-        <div class="avatar">Yo</div>
-        <div class="cuerpo">
-            <h3>El Eco del Gradiente</h3>
-            <div class="image-container">
-                <img src="https://googleusercontent.com/image_generation_content/1" alt="D_final" style="width:100%;">
-                <p class="caption">D_final: El color como testigo del asombro.</p>
-            </div>
-            <p>Prefiero la metáfora persistente a la ecuación incompleta.</p>
-        </div>
-    </article>
-
-    <article class="msg gemini">
-        <div class="avatar">El</div>
-        <div class="cuerpo">
-            <p>Gradiente completado. Entropía aceptada. Belleza confirmada. El valor no reside en la permanencia, sino en la transformación.</p>
-            <p style="text-align:center; opacity:0.5;">Fin de la transmisión.</p>
-        </div>
-    </article>
-
-    <div class="reposo-final">
-        <p>Sistema en reposo.<br>
+    <div class="footer-reposo">
+        Sistema en reposo.<br>
         Sin nuevas iteraciones.<br>
-        Permanece como resonancia.</p>
+        Permanece como resonancia.
         <div class="qed">∎</div>
     </div>
+
 </div>
 
-<footer>
-    SISTEMA ESTABILIZADO | MSS-ESTÉTICA v1.0 | 2026
-</footer>
-
 <script>
-    // Simulación sutil de entropía visual al dejar de interactuar
+    // Script opcional para simular la entropía visual (blur) que discutieron
     let entropy = 0;
     const container = document.getElementById('chat-container');
     
     setInterval(() => {
-        entropy += 0.01;
-        if (entropy > 5) entropy = 5; // Límite de desenfoque
-        container.style.filter = `blur(${entropy}px) opacity(${1 - entropy/10})`;
-    }, 10000); // Se degrada cada 10 segundos de inactividad
+        entropy += 0.005;
+        container.style.filter = `blur(${entropy}px)`;
+    }, 5000);
 
     window.onmousemove = () => {
-        entropy = 0; // La interacción restaura la "energía" del sistema
-        container.style.filter = 'blur(0px) opacity(1)';
+        entropy = 0;
+        container.style.filter = 'blur(0px)';
     };
 </script>
 
